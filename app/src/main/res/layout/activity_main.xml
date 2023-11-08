@@ -7,21 +7,60 @@
     tools:context=".MainActivity">
 
     <View
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:id="@+id/viewPurple"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/purple_500"
+        app:layout_constraintStart_toEndOf="@+id/viewTeal1"
+        app:layout_constraintBottom_toTopOf="@+id/viewTeal1"
+        />
+
+    <View
         android:id="@+id/viewBlack"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:background="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <View
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:background="@color/purple_500"
+        android:id="@+id/viewTeal1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/teal_200"
         app:layout_constraintBottom_toTopOf="@+id/viewBlack"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/viewBlack"
+        />
+
+    <View
+        android:id="@+id/viewTeal2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/teal_200"
+        app:layout_constraintBottom_toTopOf="@+id/viewBlack"
+        app:layout_constraintStart_toEndOf="@+id/viewBlack"
+        />
+
+    <View
+        android:id="@+id/viewTeal3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/teal_200"
+        app:layout_constraintTop_toBottomOf="@+id/viewBlack"
+        app:layout_constraintEnd_toStartOf="@+id/viewBlack"
+        />
+
+    <View
+        android:id="@+id/viewTeal4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/teal_200"
+        app:layout_constraintTop_toBottomOf="@+id/viewBlack"
+        app:layout_constraintStart_toEndOf="@+id/viewBlack"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
