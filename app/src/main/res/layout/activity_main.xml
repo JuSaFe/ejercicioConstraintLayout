@@ -7,18 +7,19 @@
     tools:context=".MainActivity">
 
     <View
-        android:id="@+id/viewPurple"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:id="@+id/viewPurple1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:background="@color/purple_500"
         app:layout_constraintStart_toEndOf="@+id/viewTeal1"
         app:layout_constraintBottom_toTopOf="@+id/viewTeal1"
+        app:layout_constraintEnd_toStartOf="@id/viewTeal2"
         />
 
     <View
         android:id="@+id/viewBlack"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:background="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,8 +29,8 @@
 
     <View
         android:id="@+id/viewTeal1"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:background="@color/teal_200"
         app:layout_constraintBottom_toTopOf="@+id/viewBlack"
         app:layout_constraintEnd_toStartOf="@+id/viewBlack"
@@ -37,8 +38,8 @@
 
     <View
         android:id="@+id/viewTeal2"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:background="@color/teal_200"
         app:layout_constraintBottom_toTopOf="@+id/viewBlack"
         app:layout_constraintStart_toEndOf="@+id/viewBlack"
@@ -46,8 +47,8 @@
 
     <View
         android:id="@+id/viewTeal3"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:background="@color/teal_200"
         app:layout_constraintTop_toBottomOf="@+id/viewBlack"
         app:layout_constraintEnd_toStartOf="@+id/viewBlack"
@@ -55,11 +56,39 @@
 
     <View
         android:id="@+id/viewTeal4"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:background="@color/teal_200"
         app:layout_constraintTop_toBottomOf="@+id/viewBlack"
         app:layout_constraintStart_toEndOf="@+id/viewBlack"
+        />
+
+    <View
+        android:id="@+id/viewPurple2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/purple_500"
+        app:layout_constraintStart_toEndOf="@+id/viewTeal3"
+        app:layout_constraintTop_toBottomOf="@+id/viewTeal3"
+        app:layout_constraintEnd_toStartOf="@id/viewTeal4"
+        />
+
+    <View
+        android:id="@+id/viewPurple3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/purple_500"
+        app:layout_constraintEnd_toStartOf="@+id/viewTeal3"
+        app:layout_constraintTop_toBottomOf="@+id/viewTeal3"
+        />
+
+    <View
+        android:id="@+id/viewPurple4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/purple_500"
+        app:layout_constraintStart_toEndOf="@+id/viewTeal4"
+        app:layout_constraintTop_toBottomOf="@+id/viewTeal4"
         />
 
 
